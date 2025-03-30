@@ -1,27 +1,31 @@
 import multer from "multer";
 import path from "path";
+import { tmpdir } from "os"; // Import Node's OS module
 
-// Configure storage
+// Configure storage to use system temp directory
 const storage = multer.diskStorage({
-  destination: "uploads/", // Uploads folder
-  filename: (req, file, cb) => {
-    cb(null, `${Date.now()}${path.extname(file.originalname)}`);
+  destination: function (req, file, cb) {
+    cb(null, tmpdir()); // This works on Vercel
+  },
+  filename: function (req, file, cb) {
+    const uniqueSuffix = Date.now() + '-' + Math.round(Math.random() * 1E9);
+    cb(null, file.fieldname + '-' + uniqueSuffix + path.extname(file.originalname));
   }
 });
 
-// File filter (only allow JPEG & PNG)
 const fileFilter = (req, file, cb) => {
   const allowedTypes = ["image/jpeg", "image/png"];
-  cb(null, allowedTypes.includes(file.mimetype));
+  if (allowedTypes.includes(file.mimetype)) {
+    cb(null, true);
+  } else {
+    cb(new Error("Invalid file type. Only JPEG and PNG are allowed."), false);
+  }
 };
 
-// Configure multer
 const upload = multer({
   storage,
   fileFilter,
   limits: { fileSize: 5 * 1024 * 1024 } // 5MB limit
 });
 
-
-
-export default upload
+export default upload;

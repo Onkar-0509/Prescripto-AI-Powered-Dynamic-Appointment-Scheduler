@@ -17,10 +17,10 @@ const Doctors = () => {
 
   const applyFilter = () => {
     if (speciality) {
-      setfilterDoc(doctors.filter(doc => doc.speciality === speciality))
+      setfilterDoc(doctors.filter(doc => doc.speciality === speciality && doc.speciality !== "Emergency"));
     }
     else {
-      setfilterDoc(doctors)
+      setfilterDoc(doctors && doctors.filter(doc =>doc.speciality !== "Emergency"))
 
     }
   }

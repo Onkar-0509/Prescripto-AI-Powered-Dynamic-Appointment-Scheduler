@@ -459,7 +459,7 @@ function SpecialistPredication() {
                                                 This requires immediate medical attention. Please call emergency services or go to the nearest hospital.
                                             </p>
                                             <button
-                                                onClick={() =>navigate(`/appoinment/67e94c8c918e5c0a6984e130`)}
+                                                onClick={() =>navigate(`/appoinment/67e99d4f1a628be7d769923d`)}
                                                 className="w-full px-6 py-3 bg-red-600 hover:bg-red-700 text-white font-medium rounded-lg shadow-md hover:shadow-lg transition-all duration-200 transform hover:-translate-y-0.5 flex items-center justify-center"
                                             >
                                                 <svg className="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">

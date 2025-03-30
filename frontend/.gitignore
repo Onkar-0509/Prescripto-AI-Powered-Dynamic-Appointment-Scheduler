@@ -23,10 +23,3 @@ dist-ssr
 *.sln
 *.sw?
 
-ML Modelss/ML models/disease_prediction_model.pkl
-ML Modelss/ML models/label_encoder.pkl
-ML Modelss/ML models/model.pkl
-ML Modelss/ML models/prognosis_encoder.pkl
-ML Modelss/ML models/symptom_columns.pkl
-ML Modelss/app.py
-

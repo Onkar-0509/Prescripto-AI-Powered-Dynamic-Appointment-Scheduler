@@ -4,7 +4,7 @@ import Home from './pages/Home'
 import Doctors from './pages/Doctors'
 import About from './pages/About'
 import Contact from './pages/Contact'
-import Myprofile from './pages/Myprofile'
+import Myprofile from './pages/MyProfile'
 import MyAppoinments from './pages/MyAppoinments'
 import Appoinments from './pages/Appoinments'
 import Navbar from './components/Navbar'
@@ -12,6 +12,8 @@ import Login from './pages/Login'
 import Footer from './components/Footer'
 import {toast ,ToastContainer} from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import SpecialistPredication from './pages/SpecialistPredication'
+
 
  
 const App = () => {
@@ -29,8 +31,9 @@ const App = () => {
         <Route path='/my-profile' element={<Myprofile/>} />
         <Route path='/my-appoinments' element={<MyAppoinments/>} />
         <Route path='/appoinment/:docId' element={<Appoinments/>} />
+        <Route path='/SpecialistRecommendation' element={<SpecialistPredication/>} />
+        
       </Routes>
-
       <Footer/>
       
     </div>

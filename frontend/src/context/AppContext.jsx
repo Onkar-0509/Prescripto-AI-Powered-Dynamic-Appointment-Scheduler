@@ -16,9 +16,10 @@ const AppContextProvider=(props)=>{
 
     const currencySymbol='$';
     const backend_url=import.meta.env.VITE_BACKEND_URL
+    const ml_url=import.meta.env.VITE_ML_URL
 
 
-    
+
 
     const getDoctorsData=async()=>{
         try{
@@ -68,6 +69,7 @@ const AppContextProvider=(props)=>{
         SetUserData,
         loadUserProfileData,
         getDoctorsData,
+        ml_url
     }
 
     useEffect(() => {

@@ -89,6 +89,8 @@ const Appointments = () => {
       const slotDate = day + '_' + month + '_' + year;
       const slotTime = sloTime.time;
 
+      console.log("tokenii",token)
+
       const { data } = await axios.post(backend_url + '/api/user/book-appointment', { docId, slotDate, slotTime }, { headers: { token } });
 
       if (data.success) {

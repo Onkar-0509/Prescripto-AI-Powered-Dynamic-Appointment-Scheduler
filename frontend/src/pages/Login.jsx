@@ -25,7 +25,7 @@ const Login = () => {
       if (state === 'Sign Up') {
         const { data } = await axios.post(backend_url + '/api/user/register', { name, email, password })
         if (data.success) {
-          setToken('token', data.token)
+          setToken(data.token)
           localStorage.setItem('token', data.token);
         }
         else {
@@ -37,7 +37,7 @@ const Login = () => {
 
         const { data } = await axios.post(backend_url + '/api/user/login', { email, password })
         if (data.success) {
-          setToken('token', data.token)
+          setToken(data.token)
           localStorage.setItem('token', data.token);
         }
         else {

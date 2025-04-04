@@ -1,89 +1,112 @@
-# 🧐 Prescripto - AI-Powered Dynamic Appointment Scheduler
+# 🧐 Prescripto – AI-Powered Dynamic Appointment Scheduler
 
 ## 🚀 Overview
 
-Prescripto is a smart hospital management platform that enhances healthcare accessibility and efficiency using Artificial Intelligence (AI) and Machine Learning (ML). The system enables disease prediction based on patient symptoms, recommends appropriate specialists, assigns severity levels, and manages appointment bookings dynamically. Emergency slots are automatically allocated for critical cases, and a conflict-free scheduling system ensures reliable slot management. Role-based access is provided for Patients, Doctors, and Admins.
+**Prescripto** is an intelligent hospital management platform that leverages **Artificial Intelligence (AI)** and **Machine Learning (ML)** to redefine healthcare efficiency and accessibility. It allows:
 
-## 📌 Features
+- 🧠 **Disease prediction** based on user-entered symptoms  
+- 🩺 **Specialist recommendation** for accurate diagnosis and treatment  
+- ⚠️ **Severity level classification** to prioritize critical cases  
+- 📅 **Dynamic, conflict-free appointment scheduling** based on doctor availability  
+- 🚨 **Emergency slot allocation** for urgent situations  
 
-🔹 Patient Features
+Role-based access is integrated for **Patients**, **Doctors**, and **Admins**, ensuring a tailored and secure experience for each stakeholder.
 
-✨ Symptom-Based Disease PredictionPatients input symptoms, and the AI model predicts potential diseases.
+---
 
-🔎 Doctor Specialty RecommendationBased on the predicted disease, the system suggests suitable specialists.
+## 📌 Core Features
 
-⚡ Severity Level AssignmentThe system classifies cases into severity levels:
+### 👤 Patient Features
 
-🔴 Emergency
+- ✨ **AI-Powered Symptom-Based Disease Prediction**  
+  Input symptoms and receive a probable diagnosis using ML models.
 
-🔷 High
+- 🔎 **Smart Doctor Recommendations**  
+  Get matched with the right specialist for your condition.
 
-🔶 Moderate
+- ⚡ **Severity-Based Classification**
+  - 🔴 Emergency  
+  - 🔷 High  
+  - 🔶 Moderate  
+  - 🔵 Low  
 
-🔵 Low
+- 📅 **Dynamic Appointment Booking**  
+  - ⚠️ Emergency? Get an immediate slot  
+  - 🗓️ Non-emergency? Schedule based on doctor availability  
 
-📅 Dynamic Appointment Booking
+- ❌ **Conflict-Free Slot Management**  
+  Eliminates overlapping by hiding already booked slots.
 
-Emergency cases receive immediate slot allocation.
+- 📖 **Find Doctors by Specialty**  
+  Easily search and filter doctors by their medical field.
 
-Non-emergency cases are scheduled based on doctor availability.
+---
 
-❌ Conflict-Free Slot ManagementBooked slots are hidden from other users to prevent overlapping appointments.
+### 🩺 Doctor Features
 
-📖 Find Doctors by SpecialtyPatients can browse doctors based on their medical specialization.
+- 🔢 **View Recent Appointments**  
+  Check your 5 latest patient bookings instantly.
 
-🔹 Doctor Features
+- ✏️ **Manage Appointments**  
+  Confirm, reschedule, or cancel appointments as needed.
 
-🔢 Latest Appointments ViewDoctors can view their 5 most recent patient appointments.
+- ⏰ **Availability Scheduling**  
+  Set and update your available consultation slots.
 
-✏️ Manage AppointmentsDoctors can confirm, update, or cancel appointments.
+---
 
-⏰ Availability SchedulingDoctors can set or update their availability times.
+### 🛡️ Admin Features
 
-🔹 Admin Features
+- 📊 **Global Appointment Control**  
+  View and manage appointments across the hospital.
 
-📊 Global Appointment ManagementFull access to view and manage all doctor appointments.
+- 📕 **Recent Appointments Overview**  
+  Monitor the latest hospital-wide patient bookings.
 
-📕 Recent Appointment OverviewView the 5 most recent hospital-wide appointments.
+- ⚙️ **Doctor Slot Management**  
+  Modify or manage doctor availability.
 
-⚙️ Doctor Availability ManagementModify doctors' availability slots.
+- ➕ **Register New Doctors**  
+  Seamlessly add and onboard new medical professionals.
 
-➕ Add New DoctorsAdmins can register new doctors in the system.
+---
 
 ## 🛠️ Tech Stack
 
-🌐 Frontend
+### 🌐 Frontend
 
-React.js – For dynamic and fast UI rendering
+- ⚛️ **React.js** – Fast and dynamic user interfaces  
+- 🎨 **Tailwind CSS / Material UI** – Responsive and modern styling  
+- 🔄 **Axios / Fetch API** – Smooth client-server communication  
 
-Tailwind CSS / Material UI – For responsive and modern styling
+### 🧠 AI & Machine Learning
 
-Axios / Fetch API – For client-server communication
+- 🐍 **Python** – ML backend  
+- 📦 **Scikit-learn, NumPy, Pandas** – Data processing & training  
+- 🌐 **Flask** – REST API to connect ML with frontend/backend  
 
-🧠 AI & Machine Learning
+### 💻 Backend
 
-Python – AI logic and ML model
+- 🟢 **Node.js + Express.js** – RESTful API services and business logic  
 
-Scikit-learn, Numpy, Pandas – Data handling and model training
+### 🗄️ Database
 
-Flask – REST API to serve ML model to frontend/backend
+- 🍃 **MongoDB** – NoSQL database for users, doctors, appointments, and more  
 
-💻 Backend
+---
 
-Node.js + Express.js – REST API development and core logic
+## 🌍 Live Demo
 
-📃 Database
+Experience Prescripto in real-time!  
+Click the links below to explore different interfaces:
 
-MongoDB – To store users, doctors, appointments, symptoms, and logs
+🔗 **User Portal**  
+👉 [Launch User Dashboard](http://ai-powered-dynamic-appointment-scheduler-frontend.vercel.app)
 
-## 🌐 Live Demo
+🔗 **Admin Panel**  
+👉 [Launch Admin Panel](https://ai-powered-dynamic-appointment-scheduler-admin.vercel.app)
 
-Experience Prescripto in action through the live dashboards below:
-
-🔗 User PortalAccess the user-facing application for symptom entry, appointment booking, and more.👉 Launch User Dashboard
-
-🔗 Admin PortalAccess the admin interface for appointment oversight, doctor management, and system control.👉 Launch Admin Panel
-
+---
 
 
 ## 🖼️ Screenshots

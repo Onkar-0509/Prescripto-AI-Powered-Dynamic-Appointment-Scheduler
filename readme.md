@@ -151,6 +151,9 @@ Click the links below to explore different interfaces:
 #### ⚡ Emergency Slot Allocation
 <img src="ScreenShots/12.jpg" alt="User Login" width="600"/>
 
+#### 📅 Emergency Slot Booking
+<img src="ScreenShots/25.jpg" alt="User Login" width="600"/>
+
 
 
 

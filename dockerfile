@@ -17,9 +17,9 @@ RUN npm run build
 # Stage 3: Nginx to serve both
 FROM nginx:alpine
 # Copy frontend build -> /usr/share/nginx/html
-COPY --from=build-frontend /app/frontend/build /usr/share/nginx/html
+COPY --from=build-frontend /app/frontend/dist /usr/share/nginx/html
 # Copy admin build -> /usr/share/nginx/admin
-COPY --from=build-admin /app/admin/build /usr/share/nginx/admin
+COPY --from=build-admin /app/admin/dist /usr/share/nginx/admin
 # Replace default nginx.conf
 COPY nginx/default.conf /etc/nginx/conf.d/default.conf
 

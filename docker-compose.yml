@@ -8,9 +8,6 @@ services:
     container_name: webserver
     ports:
       - "80:80"
-    env_file:
-      - ./frontend/.env    
-      - ./admin/.env 
     depends_on:
       - backend
     healthcheck:

@@ -104,7 +104,7 @@ Click the links below to explore different interfaces:
 👉 [Launch User Dashboard](http://ec2-13-60-60-176.eu-north-1.compute.amazonaws.com/)
 
 🔗 **Admin Panel**  
-👉 [Launch Admin Panel](http://ec2-13-60-60-176.eu-north-1.compute.amazonaws.com/admin/index.html/)
+👉 [Launch Admin Panel](http://ec2-13-60-60-176.eu-north-1.compute.amazonaws.com/admin/index.html)
 
 ---
 

@@ -101,10 +101,10 @@ Experience Prescripto in real-time!
 Click the links below to explore different interfaces:
 
 🔗 **User Portal**  
-👉 [Launch User Dashboard](http://ai-powered-dynamic-appointment-scheduler-frontend.vercel.app)
+👉 [Launch User Dashboard](http://ec2-13-60-60-176.eu-north-1.compute.amazonaws.com/)
 
 🔗 **Admin Panel**  
-👉 [Launch Admin Panel](https://ai-powered-dynamic-appointment-scheduler-admin.vercel.app)
+👉 [Launch Admin Panel](http://ec2-13-60-60-176.eu-north-1.compute.amazonaws.com/admin/index.html/)
 
 ---
 
